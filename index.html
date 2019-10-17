@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boredom Roulette</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #faefcd;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Boredom Roulette</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container text-center">
+		<h1>Tap the button,</h1> 
+		<h1>find amusement</h1><br/>
+		<h3 class="text-muted">Your activity is:</h3><br/>
+		<h2 id="res"></h2>
+		<button class="btn btn-lg btn-block btn-primary butn">Cure my boredom</button>
+	</div>
+	<footer class="footer text-muted">
+        <div class="container-fluid">
+            &copy; 2019 - Bordeom Roulette
+        </div>
+    </footer>
+    <script type="text/javascript">
+    	var list = [
+    	"Give yourself a manicure/pedicure", 
+    	"Experiment with your hair", 
+    	"Draw", 
+    	"Do yoga", 
+    	"Write a poem, story, or journal entry", 
+    	"Take a nap", 
+    	"Read", 
+    	"Listen to music", 
+    	"Find a new band or artist", 
+    	"Stretch", 
+    	"Watch TV/Streaming service", 
+    	"Look at old photos/videos", 
+    	"Bake", 
+    	"Meditate", 
+    	"Have a snack", 
+    	"Sit outside (if weather permits)", 
+    	"Write a letter to your future self",
+    	"Cuddle with someone or something",
+    	"Go for a hike",
+    	"Try a new restaurant",
+    	"Plan a trip",
+    	"Cook something new",
+    	"Find a podcast",
+    	"Reach out to an old friend or relative",
+    	"Rearrange furniture or redecorate",
+    	"Go to a museum",
+    	"Try learning a new language (or make your own!)",
+    	"Make a home video",
+    	"Have a photo shoot",
+    	"Drive somewhere you've never been",
+    	"Talk to someone",
+    	"Exercise",
+    	"Go for a walk",
+    	"Organize something messy (desk, closet, pantry)",
+    	"Update your resume",
+    	"Clean something that hasn't been cleaned in a while",
+    	"Meal prep for the week",
+    	"Clean up your email inbox",
+    	"Make a list of personal or professional goals",
+    	"Start a DIY project",
+    	"Go grocery shopping",
+    	"Run an errand you need to do",
+    	"Read up on current events",
+    	"Clean your phone or phone case",
+    	"Watch a how-to video",
+    	"Clear out old clothes and donate them",
+    	"Get ahead of any work you have",
+    	"Do laundry",
+    	"Make a list of something",
+    	"Window shop online",
+    	"Find your dream home in rent listings",
+    	"Play a video game",
+    	"Play a game with friends",
+    	"Watch a documentary",
+    	"Go to the movies",
+    	"Write a love note",
+    	"Watch YouTube videos",
+    	"Make a bucket list (or add to a current one)",
+    	"Plan a dream wedding (doesn't have to be yours)",
+    	"Read a magazine",
+    	"Go to a play or musical",
+    	"Sing",
+    	"Dance",
+    	"Learn a new song",
+    	"Go to a nearby event (Google one!)",
+    	"Learn to code (or a new language if you already can)",
+    	"Learn or study Morse Code",
+    	"Research a random topic you're interested in",
+    	"Work on a skill you have",
+    	"Update your social profile",
+    	"Build something (even just a couch fort!)",
+    	"Scroll through a social site you like (Reddit, Instagram, Pinterest, ...)",
+    	"Learn a new skill",
+    	"Try writing or drawing with your non-dominant hand",
+    	"Go somewhere to people watch",
+    	"Practice or learn an instrument",
+    	"Look for a new job (or fantasize about the perfect one)",
+    	"Make a to do list",
+    	"Research something that will help you at work"
+    	];
+    	$(".butn").click(function(){
+    		var rand = Math.floor(Math.random()*list.length);
+    		$("#res").html(list[rand]);
+    	});
+    </script>
+</body>
+</html>
